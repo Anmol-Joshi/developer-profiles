@@ -1,4 +1,6 @@
 import React from 'react';
+import './HomePage.css';
+import headerImage from './assets/Icons_Illustrations/undraw_dev_productivity.png';
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -17,14 +19,21 @@ class HomePage extends React.Component {
     };
 
     render() {
-        const { value } = this.state;
+        // const { value } = this.state;
         return (
             <div>
-                <label>Enter developer id: </label>
+                <header>
+                    <div className="main-heading">
+                        The Developer
+                        <br className="desktop-br" /> Repository
+                    </div>
+                    <img className="main-img" src={headerImage} alt="header" />
+                </header>
+                {/* <label>Enter developer id: </label>
                 <input onChange={this.onChange} value={value} />
                 <button type="button" onClick={this.onClick}>
                     Submit
-                </button>
+                </button> */}
             </div>
         );
     }

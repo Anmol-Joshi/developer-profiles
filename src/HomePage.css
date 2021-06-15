@@ -1,0 +1,37 @@
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+header {
+    width: 100%;
+    background-color: #2f2e41;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /* justify-content: center; */
+}
+
+.main-heading {
+    /* position: fixed; */
+    display: inline;
+
+    /* padding-left: 100px;
+  padding-right: 100px; */
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 72px;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.main-img {
+    /* height: 600px;
+  width: 500px; */
+    height: auto;
+    width: 40%;
+}
