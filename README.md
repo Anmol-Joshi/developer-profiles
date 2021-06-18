@@ -1,4 +1,4 @@
-<a href='http://developer-profiles.herokuapp.com/' targer='_blank'># Demo </a>
+# Demo<a href='http://developer-profiles.herokuapp.com/' targer='_blank'>http://developer-profiles.herokuapp.com/</a>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
