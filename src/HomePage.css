@@ -1,7 +1,6 @@
 * {
     font-family: 'Nunito Sans', sans-serif;
 }
-
 body {
     margin: 0;
 }
@@ -17,11 +16,7 @@ header {
 }
 
 .main-heading {
-    /* position: fixed; */
     display: inline;
-
-    /* padding-left: 100px;
-  padding-right: 100px; */
     margin-left: 100px;
     margin-right: 100px;
     font-size: 72px;
@@ -34,4 +29,238 @@ header {
   width: 500px; */
     height: auto;
     width: 40%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-heading {
+    font-size: 56px;
+    color: #3f3d56;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sub-hr {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #3f3d56;
+}
+
+.search-input-div {
+    background-color: #d0cde1;
+    display: flex;
+    width: 780px;
+    height: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+
+    /* padding: 5px; */
+}
+
+.search-input {
+    width: 700px;
+    height: 60px;
+    border-radius: 15px;
+    border-color: #fff;
+    border-width: 0;
+    margin: 10px;
+    font-size: 24px;
+    color: #3f3d56;
+    padding-left: 25px;
+    padding-right: 25px;
+    outline: none;
+}
+
+.search-icon {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* .developer-info-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.developer-avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50% 50% 50% 50%;
+    fill: #7c639f;
+}
+
+.developer-name {
+    font-size: 36px;
+    color: #9f8e63;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.developer-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    margin: 50px;
+} */
+
+.not-found-message {
+    font-size: 36px;
+    color: #3f3d56;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.add-dev-info-btn {
+    font-size: 36px;
+    background-color: #7c639f;
+    display: flex;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    padding-left: 72px;
+    padding-right: 72px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    color: white;
+    border: none;
+}
+footer {
+    background-color: #2f2e41;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.fa-icon {
+    margin: 5px;
+}
+
+.popup-container {
+    display: none;
+
+    /* display: null; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 90%;
+    overflow-y: scroll;
+    /* background: rgba(255,255,255,.6); */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    background-color: white;
+    /* background-color: rgba(0,0,0,0.8); */
+}
+
+.popup-container-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.form-header {
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.popup-sub-hr {
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #3f3d56;
+}
+
+.popup-container-body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-element {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.profile-element-heading {
+    margin-bottom: 20px;
+}
+
+.profile-element-heading-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: bottom;
+}
+
+.profile-element-input {
+    width: 600px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.popup-container-footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.popup-cancel-btn {
+    width: 175px;
+    height: 50px;
+    font-size: 24px;
+    background-color: white;
+    border: none;
+    color: #3f3d56;
+}
+
+.popup-submit-btn {
+    width: 175px;
+    height: 50px;
+    font-size: 24px;
+    background-color: #7c639f;
+    border: none;
+    color: white;
+    border-radius: 15px;
 }
