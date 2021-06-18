@@ -1,4 +1,4 @@
-# Demo <a>http://developer-profiles.herokuapp.com/</a>
+# Demo <a targer='_blank'>http://developer-profiles.herokuapp.com/</a>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
