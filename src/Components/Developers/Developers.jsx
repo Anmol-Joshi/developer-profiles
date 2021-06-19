@@ -29,7 +29,6 @@ class Developers extends React.Component {
     searchDeveloper = () => {
         axios.get(`http://localhost:4000/api/developers/${this.state.value}`).then((res) => {
             this.setState({ developers: [{ id: res.data.id, avatar_url: res.data.avatar_url }] });
-            // console.log({ id: res.data.id, avatar_url: res.data.avatar_url });
         });
     };
 

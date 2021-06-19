@@ -162,9 +162,8 @@ footer {
 .fa-icon {
     margin: 5px;
 }
-
 .popup-container {
-    display: none;
+    /* display: none; */
 
     /* display: null; */
     position: fixed;
@@ -228,10 +227,11 @@ footer {
     width: 24px;
     height: 24px;
     vertical-align: bottom;
+    margin: 2px;
 }
 
 .profile-element-input {
-    width: 600px;
+    width: 100%;
     height: 50px;
     border-radius: 5px;
     font-size: 24px;
@@ -253,6 +253,11 @@ footer {
     background-color: white;
     border: none;
     color: #3f3d56;
+}
+
+.popup-error {
+    color: red;
+    font-size: 15px;
 }
 
 .popup-submit-btn {
