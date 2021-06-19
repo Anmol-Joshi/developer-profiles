@@ -62,28 +62,32 @@ class HomePage extends React.Component {
     render() {
         return (
             <div>
-                <header>
-                    <div className="main-heading">
+                <header className="homepage-header">
+                    <div className="homepage-main-heading">
                         The Developer
                         <br className="desktop-br" /> Repository
                     </div>
-                    <img className="main-img" src={headerImage} alt="header" />
+                    <img className="homepage-main-img" src={headerImage} alt="header" />
                 </header>
-                <main>
-                    <div className="sub-heading">Explore developer profiles</div>
-                    <hr className="sub-hr" />
+                <main className="homepage-main">
+                    <div className="homepage-sub-heading">Explore developer profiles</div>
+                    <hr className="homepage-sub-hr" />
                     <Developers />
                     {this.state.displayPopup && (
-                        <div className="popup-container">
-                            <div className="popup-container-header">
-                                <div className="form-header">Add developer profile</div>
+                        <div className="homepage-popup-container">
+                            <div className="homepage-popup-container-header">
+                                <div className="homepage-form-header">Add developer profile</div>
                             </div>
-                            <hr className="popup-sub-hr" />
-                            <div className="popup-container-body">
-                                <div className="profile-element">
-                                    <div className="profile-element-heading">
-                                        <img className="profile-element-heading-icon" src={githubIcon} alt="" />
-                                        <label className="profile-element-heading-text" htmlFor="Github">
+                            <hr className="homepage-popup-sub-hr" />
+                            <div className="homepage-popup-container-body">
+                                <div className="homepage-profile-element">
+                                    <div className="homepage-profile-element-heading">
+                                        <img
+                                            className="homepage-profile-element-heading-icon"
+                                            src={githubIcon}
+                                            alt=""
+                                        />
+                                        <label className="homepage-profile-element-heading-text" htmlFor="Github">
                                             Github*
                                         </label>
                                     </div>
@@ -92,14 +96,18 @@ class HomePage extends React.Component {
                                         onChange={(e) => this.setState({ githubId: e.target.value })}
                                         value={this.state.githubId}
                                         id="github-id"
-                                        className="profile-element-input"
+                                        className="homepage-profile-element-input"
                                         name="Github"
                                     />
                                 </div>
-                                <div className="profile-element">
-                                    <div className="profile-element-heading">
-                                        <img className="profile-element-heading-icon" src={linkedinIcon} alt="" />
-                                        <label className="profile-element-heading-text" htmlFor="Linkedin">
+                                <div className="homepage-profile-element">
+                                    <div className="homepage-profile-element-heading">
+                                        <img
+                                            className="homepage-profile-element-heading-icon"
+                                            src={linkedinIcon}
+                                            alt=""
+                                        />
+                                        <label className="homepage-profile-element-heading-text" htmlFor="Linkedin">
                                             Linkedin
                                         </label>
                                     </div>
@@ -108,14 +116,18 @@ class HomePage extends React.Component {
                                         onChange={(e) => this.setState({ linkedinId: e.target.value })}
                                         value={this.state.linkedinId}
                                         id="linkedin-id"
-                                        className="profile-element-input"
+                                        className="homepage-profile-element-input"
                                         name="Linkedin"
                                     />
                                 </div>
-                                <div className="profile-element">
-                                    <div className="profile-element-heading">
-                                        <img className="profile-element-heading-icon" src={codechefIcon} alt="" />
-                                        <label className="profile-element-heading-text" htmlFor="Codechef">
+                                <div className="homepage-profile-element">
+                                    <div className="homepage-profile-element-heading">
+                                        <img
+                                            className="homepage-profile-element-heading-icon"
+                                            src={codechefIcon}
+                                            alt=""
+                                        />
+                                        <label className="homepage-profile-element-heading-text" htmlFor="Codechef">
                                             Codechef
                                         </label>
                                     </div>
@@ -124,14 +136,18 @@ class HomePage extends React.Component {
                                         onChange={(e) => this.setState({ codechefId: e.target.value })}
                                         value={this.state.codechefId}
                                         id="codechef-id"
-                                        className="profile-element-input"
+                                        className="homepage-profile-element-input"
                                         name="Codechef"
                                     />
                                 </div>
-                                <div className="profile-element">
-                                    <div className="profile-element-heading">
-                                        <img className="profile-element-heading-icon" src={hackerrankIcon} alt="" />
-                                        <label className="profile-element-heading-text" htmlFor="Hackerrank">
+                                <div className="homepage-profile-element">
+                                    <div className="homepage-profile-element-heading">
+                                        <img
+                                            className="homepage-profile-element-heading-icon"
+                                            src={hackerrankIcon}
+                                            alt=""
+                                        />
+                                        <label className="homepage-profile-element-heading-text" htmlFor="Hackerrank">
                                             Hackerrank
                                         </label>
                                     </div>
@@ -140,14 +156,18 @@ class HomePage extends React.Component {
                                         onChange={(e) => this.setState({ hackerrankId: e.target.value })}
                                         value={this.state.hackerrankId}
                                         id="hackerrank-id"
-                                        className="profile-element-input"
+                                        className="homepage-profile-element-input"
                                         name="Hackerrank"
                                     />
                                 </div>
-                                <div className="profile-element">
-                                    <div className="profile-element-heading">
-                                        <img className="profile-element-heading-icon" src={twitterIcon} alt="" />
-                                        <label className="profile-element-heading-text" htmlFor="Twitter">
+                                <div className="homepage-profile-element">
+                                    <div className="homepage-profile-element-heading">
+                                        <img
+                                            className="homepage-profile-element-heading-icon"
+                                            src={twitterIcon}
+                                            alt=""
+                                        />
+                                        <label className="homepage-profile-element-heading-text" htmlFor="Twitter">
                                             Twitter
                                         </label>
                                     </div>
@@ -156,14 +176,18 @@ class HomePage extends React.Component {
                                         onChange={(e) => this.setState({ twitterId: e.target.value })}
                                         value={this.state.twitterId}
                                         id="twitter-id"
-                                        className="profile-element-input"
+                                        className="homepage-profile-element-input"
                                         name="Twitter"
                                     />
                                 </div>
-                                <div className="profile-element">
-                                    <div className="profile-element-heading">
-                                        <img className="profile-element-heading-icon" src={mediumIcon} alt="" />
-                                        <label className="profile-element-heading-text" htmlFor="Medium">
+                                <div className="homepage-profile-element">
+                                    <div className="homepage-profile-element-heading">
+                                        <img
+                                            className="homepage-profile-element-heading-icon"
+                                            src={mediumIcon}
+                                            alt=""
+                                        />
+                                        <label className="homepage-profile-element-heading-text" htmlFor="Medium">
                                             Medium
                                         </label>
                                     </div>
@@ -172,48 +196,48 @@ class HomePage extends React.Component {
                                         onChange={(e) => this.setState({ mediumId: e.target.value })}
                                         value={this.state.mediumId}
                                         id="medium-id"
-                                        className="profile-element-input"
+                                        className="homepage-profile-element-input"
                                         name="Medium"
                                     />
                                 </div>
                             </div>
-                            <hr className="popup-sub-hr" />
-                            <div className="popup-container-footer">
+                            <hr className="homepage-popup-sub-hr" />
+                            <div className="homepage-popup-container-footer">
                                 <br />
                                 {this.state.popupError && (
-                                    <span className="popup-error">*Github id cannot be empty</span>
+                                    <span className="homepage-popup-error">*Github id cannot be empty</span>
                                 )}
                                 {this.state.popupInvalidGithubIdError && (
-                                    <span className="popup-error">*Github id incorrect</span>
+                                    <span className="homepage-popup-error">*Github id incorrect</span>
                                 )}
                                 <input
                                     onClick={() => this.setState({ displayPopup: false })}
                                     type="button"
-                                    className="popup-cancel-btn"
+                                    className="homepage-popup-cancel-btn"
                                     id="popup-close"
                                     value="Cancel"
                                 />
                                 <input
                                     onClick={this.handleSubmit}
                                     type="button"
-                                    className="popup-submit-btn"
+                                    className="homepage-popup-submit-btn"
                                     value="Submit"
                                 />
                             </div>
                         </div>
                     )}
-                    <hr className="sub-hr" />
-                    <div className="not-found-message">Could not find what you were looking for?</div>
+                    <hr className="homepage-sub-hr" />
+                    <div className="homepage-not-found-message">Could not find what you were looking for?</div>
                     <input
                         onClick={() => this.setState({ displayPopup: true })}
                         type="button"
                         id="popup-open"
-                        className="add-dev-info-btn"
+                        className="homepage-add-dev-info-btn"
                         value="Add developer info"
                     />
                 </main>
-                <footer>
-                    <div className="footer-text">
+                <footer className="homepage-footer">
+                    <div className="homepage-footer-text">
                         Made with
                         <FA className="fa-icon" name="fas fa-heart" />
                         by Anmol
