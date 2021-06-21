@@ -50,13 +50,7 @@ body {
 }
 
 .homepage-sub-hr {
-    /* border: 0; */
-    /* clear: both; */
-    /* display: block; */
     width: 96%;
-    /* background-color: #ffff00; */
-    /* height: 1px; */
-
     margin-left: 50px;
     margin-right: 50px;
     background-color: #3f3d56;
@@ -275,4 +269,6 @@ body {
     border: none;
     color: white;
     border-radius: 15px;
+}
+@media screen and (max-width: 800px) {
 }
