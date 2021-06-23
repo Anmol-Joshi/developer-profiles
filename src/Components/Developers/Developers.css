@@ -84,7 +84,7 @@ a {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: max-content;
         justify-items: center;
-        height: 40px;
+        /* height: 40px; */
         /* margin: 10px; */
     }
     .developers-developer-avatar {
