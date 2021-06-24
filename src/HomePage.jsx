@@ -244,11 +244,6 @@ class HomePage extends React.Component {
                         by Anmol
                     </div>
                 </footer>
-                {/* <label>Enter developer id: </label>
-                <input onChange={this.onChange} value={value} />
-                <button type="button" onClick={this.onClick}>
-                    Submit
-                </button> */}
             </div>
         );
     }

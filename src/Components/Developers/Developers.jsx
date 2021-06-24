@@ -17,8 +17,6 @@ class Developers extends React.Component {
         // axios.get('http://localhost:4000/api/developers').then((res) => {
         axios.get('http://developer-profiles.herokuapp.com/api/developers').then((res) => {
             this.setState({ developers: res.data });
-            // console.log(res.data);
-            // console.log(this.state.developers);
         });
     }
 

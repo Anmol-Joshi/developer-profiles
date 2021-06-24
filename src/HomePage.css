@@ -292,8 +292,8 @@ body {
     }
 
     .homepage-main-img {
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
     }
     .homepage-sub-heading {
         font-size: 30px;
@@ -507,9 +507,9 @@ body {
         margin-bottom: 10px;
     }
 
-    .homepage-footer-text {
+    /* .homepage-footer-text {
         font-size: 10px;
         color: #fff;
         font-family: 'Nunito Sans', sans-serif;
-    }
+    } */
 }

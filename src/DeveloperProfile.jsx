@@ -29,14 +29,7 @@ class DeveloperProfile extends React.Component {
             .then((response) => response.json())
             .then((response) => {
                 this.setState({ developer: response });
-                // this.setState({ repos: response.repos });
-                // this.setState({ repos: response.repos });
                 this.setState({ loaded: true });
-                // setTimeout(() => {
-                //     this.setState({ loaded: true });
-                // }, 3000);
-                // eslint-disable-next-line no-console
-                console.log(response);
             });
     }
 
@@ -218,16 +211,12 @@ class DeveloperProfile extends React.Component {
                                                         <div className="dev-profile-repo-description">
                                                             {repo.description || ''}
                                                         </div>
-                                                        {/* <hr className="dev-profile-sub-hr" /> */}
                                                     </div>
                                                     <hr className="dev-profile-sub-hr" />
                                                 </div>
                                             ))}
                                         </div>
                                     )}
-                                    {/* {this.state.developer.repos.map((item, i) => (
-                                        <div>Test</div>
-                                    ))} */}
                                 </div>
                             </main>
                             <footer className="dev-profile-footer">
@@ -244,7 +233,6 @@ class DeveloperProfile extends React.Component {
                 )}
             </div>
         );
-        // <div>Developer data: {JSON.stringify(this.state.developer)}</div>;
     }
 }
 
