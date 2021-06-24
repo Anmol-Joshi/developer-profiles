@@ -49,6 +49,7 @@ class HomePage extends React.Component {
                 // .post('http://localhost:4000/api/developers/', postData)
                 .post('https://developer-profiles.herokuapp.com/api/developers/', postData)
                 .then(() => {
+                    window.location.reload(false);
                     this.setState({ displayPopup: false });
                 })
                 .catch(() => {
