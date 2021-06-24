@@ -15,7 +15,7 @@ class Developers extends React.Component {
     componentDidMount() {
         // https://developer-profiles.herokuapp.com/api/developers/
         // axios.get('http://localhost:4000/api/developers').then((res) => {
-        axios.get('http://developer-profiles.herokuapp.com/api/developers').then((res) => {
+        axios.get('https://developer-profiles.herokuapp.com/api/developers').then((res) => {
             this.setState({ developers: res.data });
         });
     }
@@ -26,7 +26,7 @@ class Developers extends React.Component {
 
     searchDeveloper = () => {
         // axios.get(`http://localhost:4000/api/developers/${this.state.value}`).then((res) => {
-        axios.get(`http://developer-profiles.herokuapp.com/api/developers/${this.state.value}`).then((res) => {
+        axios.get(`https://developer-profiles.herokuapp.com/api/developers/${this.state.value}`).then((res) => {
             this.setState({ developers: [{ id: res.data.id, avatar_url: res.data.avatar_url }] });
         });
     };
