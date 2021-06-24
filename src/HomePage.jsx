@@ -47,7 +47,7 @@ class HomePage extends React.Component {
         } else {
             axios
                 // .post('http://localhost:4000/api/developers/', postData)
-                .post('http://developer-profiles.herokuapp.com/api/developers/', postData)
+                .post('https://developer-profiles.herokuapp.com/api/developers/', postData)
                 .then(() => {
                     this.setState({ displayPopup: false });
                 })
