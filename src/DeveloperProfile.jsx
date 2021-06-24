@@ -24,7 +24,8 @@ class DeveloperProfile extends React.Component {
     }
 
     componentDidMount() {
-        fetch(`http://localhost:4000/api/developers/${this.props.match.params.developerId}`)
+        // fetch(`http://localhost:4000/api/developers/${this.props.match.params.developerId}`)
+        fetch(`http://developer-profiles.herokuapp.com/api/developers/${this.props.match.params.developerId}`)
             .then((response) => response.json())
             .then((response) => {
                 this.setState({ developer: response });
