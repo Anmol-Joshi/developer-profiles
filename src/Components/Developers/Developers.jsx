@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable no-console */
 /* eslint-disable react/prefer-stateless-function */
 import { Link } from 'react-router-dom';

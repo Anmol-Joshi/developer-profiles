@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 /* eslint-disable react/no-unused-state */
@@ -24,7 +25,6 @@ class DeveloperProfile extends React.Component {
     }
 
     componentDidMount() {
-        // fetch(`http://localhost:4000/api/developers/${this.props.match.params.developerId}`)
         fetch(`https://developer-profiles.herokuapp.com/api/developers/${this.props.match.params.developerId}`)
             .then((response) => response.json())
             .then((response) => {
@@ -69,63 +69,75 @@ class DeveloperProfile extends React.Component {
                                                         alt=""
                                                     />
                                                 </a>
-                                                <a
-                                                    href={`https://www.hackerrank.com/${this.state.developer.hackerrank_id}`}
-                                                    target="blank"
-                                                >
-                                                    <img
-                                                        className="dev-profile-social-element"
-                                                        src={hackerrankIcon}
-                                                        alt=""
-                                                    />
-                                                </a>
-                                                <a
-                                                    href={`https://www.codechef.com/users/${this.state.developer.codechef_id}`}
-                                                    target="blank"
-                                                >
-                                                    <img
-                                                        className="dev-profile-social-element"
-                                                        src={codechefIcon}
-                                                        alt=""
-                                                    />
-                                                </a>
-                                                <a
-                                                    href={`https://www.linkedin.com/in/${this.state.developer.linkedin_id}`}
-                                                    target="blank"
-                                                >
-                                                    <img
-                                                        className="dev-profile-social-element"
-                                                        src={linkedinIcon}
-                                                        alt=""
-                                                    />
-                                                </a>
-                                                <a
-                                                    href={`https://medium.com/@${this.state.developer.medium_id}`}
-                                                    target="blank"
-                                                >
-                                                    <img
-                                                        className="dev-profile-social-element"
-                                                        src={mediumIcon}
-                                                        alt=""
-                                                    />
-                                                </a>
-                                                <a
-                                                    href={`https://twitter.com/${this.state.developer.twitter_id}`}
-                                                    target="blank"
-                                                >
-                                                    <img
-                                                        className="dev-profile-social-element"
-                                                        src={twitterIcon}
-                                                        alt=""
-                                                    />
-                                                </a>
-                                                <a href={`mailto:${this.state.developer.email}`} target="blank">
-                                                    <img
-                                                        className="dev-profile-social-element"
-                                                        src={emailIcon}
-                                                        alt=""
-                                                    />
-                                                </a>
+                                                {this.state.developer.hackerrank_id && (
+                                                    <a
+                                                        href={`https://www.hackerrank.com/${this.state.developer.hackerrank_id}`}
+                                                        target="blank"
+                                                    >
+                                                        <img
+                                                            className="dev-profile-social-element"
+                                                            src={hackerrankIcon}
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                )}
+                                                {this.state.developer.codechef_id && (
+                                                    <a
+                                                        href={`https://www.codechef.com/users/${this.state.developer.codechef_id}`}
+                                                        target="blank"
+                                                    >
+                                                        <img
+                                                            className="dev-profile-social-element"
+                                                            src={codechefIcon}
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                )}
+                                                {this.state.developer.linkedin_id && (
+                                                    <a
+                                                        href={`https://www.linkedin.com/in/${this.state.developer.linkedin_id}`}
+                                                        target="blank"
+                                                    >
+                                                        <img
+                                                            className="dev-profile-social-element"
+                                                            src={linkedinIcon}
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                )}
+                                                {this.state.developer.medium_id && (
+                                                    <a
+                                                        href={`https://medium.com/@${this.state.developer.medium_id}`}
+                                                        target="blank"
+                                                    >
+                                                        <img
+                                                            className="dev-profile-social-element"
+                                                            src={mediumIcon}
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                )}
+                                                {this.state.developer.twitter_id && (
+                                                    <a
+                                                        href={`https://twitter.com/${this.state.developer.twitter_id}`}
+                                                        target="blank"
+                                                    >
+                                                        <img
+                                                            className="dev-profile-social-element"
+                                                            src={twitterIcon}
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                )}
+                                                {this.state.developer.email && (
+                                                    <a href={`mailto:${this.state.developer.email}`} target="blank">
+                                                        <img
+                                                            className="dev-profile-social-element"
+                                                            src={emailIcon}
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                )}
                                             </div>
                                             <div className="dev-profile-other-info">
                                                 <div className="location-div">
@@ -168,10 +180,11 @@ class DeveloperProfile extends React.Component {
                                                                 alt=""
                                                             />
                                                         )}
-
-                                                        <span className="dev-profile-other-element" id="blog">
-                                                            {this.state.developer.blog || ''}
-                                                        </span>
+                                                        <u>
+                                                            <span className="dev-profile-other-element" id="blog">
+                                                                {this.state.developer.blog || ''}
+                                                            </span>
+                                                        </u>
                                                     </a>
                                                 </div>
                                             </div>
@@ -180,11 +193,12 @@ class DeveloperProfile extends React.Component {
                                 </div>
                                 <div className="dev-profile-repos-group">
                                     <div className="dev-profile-repos-heading">Github repositories</div>
-                                    <hr className="dev-profile-sub-hr" />
+                                    {/* <hr className="dev-profile-sub-hr" /> */}
                                     {this.state.loaded && (
                                         <div>
                                             {this.state.developer.repos.map((repo) => (
                                                 <div>
+                                                    <hr className="dev-profile-sub-hr" />
                                                     <div className="dev-profile-repoo" key={repo.name}>
                                                         <div className="dev-profile-repo-flex">
                                                             <a
@@ -212,7 +226,7 @@ class DeveloperProfile extends React.Component {
                                                             {repo.description || ''}
                                                         </div>
                                                     </div>
-                                                    <hr className="dev-profile-sub-hr" />
+                                                    {/* <hr className="dev-profile-sub-hr" /> */}
                                                 </div>
                                             ))}
                                         </div>
