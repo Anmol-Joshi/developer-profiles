@@ -1,0 +1,75 @@
+.repos-sub-hr {
+    margin-left: 50px;
+    margin-right: 50px;
+    /* background-color: red;
+    height: 1px;
+    border: 0; */
+}
+.repos-repoo {
+    margin: 30px;
+}
+.repos-repo-flex {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 60px;
+    align-items: center;
+}
+.repos-repo-link {
+    display: flex;
+}
+.repos-repo-name {
+    font-size: 36px;
+    color: rgb(57, 125, 228);
+}
+.repos-repo-url {
+    vertical-align: top;
+    height: 20px;
+    width: 20px;
+}
+.repos-repo-last-updated {
+    font-size: 24px;
+    color: gray;
+    margin-left: 20px;
+    vertical-align: bottom;
+}
+.repos-repo-description {
+    font-size: 32px;
+    margin-left: 60px;
+}
+@media screen and (max-width: 800px) {
+    .repos-sub-hr {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .repos-repoo {
+        margin: 5px;
+    }
+    .repos-repo-flex {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        align-items: center;
+    }
+    .repos-repo-name {
+        font-size: 24px;
+        color: rgb(57, 125, 228);
+    }
+    .repos-repo-url {
+        vertical-align: top;
+        height: 14px;
+        width: 14px;
+    }
+    .repos-repo-last-updated {
+        font-size: 16px;
+        color: gray;
+        margin-left: 20px;
+        vertical-align: bottom;
+    }
+    .repos-repo-description {
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

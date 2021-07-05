@@ -1,0 +1,21 @@
+.developers-other-info-other-info {
+    display: flex;
+    /* align-items: center; */
+    margin-top: 15px;
+}
+.developers-other-info-other-element {
+    font-size: 16px;
+    height: 16px;
+    width: 16px;
+    vertical-align: bottom;
+    margin-right: 7.5px;
+}
+@media screen and (max-width: 800px) {
+    .developers-other-info-other-info {
+        display: flex;
+        justify-content: space-around;
+    }
+    .developers-other-info-other-element {
+        font-size: 12px;
+    }
+}

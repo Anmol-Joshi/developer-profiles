@@ -1,5 +1,5 @@
 const developerData = {
-    'gcnit': {
+    gcnit: {
         id: 'gcnit',
         linkedin_id: 'gcnit',
         codechef_id: 'gc_nit',
@@ -198,22 +198,6 @@ const developerData = {
                 updated_at: '2019-01-30T06:24:57Z',
             },
         ],
-    },
-    'anmol1joshi': {
-        id: 'anmol1joshi',
-        linkedin_id: 'gcnit',
-        codechef_id: 'gc_nit',
-        twitter_id: 'gc_nit',
-        medium_id: 'gc_nit',
-        avatar_url: 'https://avatars.githubusercontent.com/u/79968604?v=4',
-        name: null,
-        company: null,
-        blog: '',
-        location: null,
-        email: null,
-        bio: null,
-        github_id: 'Anmol1Joshi',
-        repos: [],
     },
     'anmol-joshi': {
         id: 'anmol-joshi',

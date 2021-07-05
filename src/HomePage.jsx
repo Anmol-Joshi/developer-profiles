@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import axios from 'axios';
 import './HomePage.css';
@@ -9,8 +10,6 @@ import codechefIcon from './assets/Profile_Icons/codechef-1324440139527402917_32
 import hackerrankIcon from './assets/Profile_Icons/iconfinder_160_Hackerrank_logo_logos_4373234.png';
 import twitterIcon from './assets/Profile_Icons/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png';
 import mediumIcon from './assets/Profile_Icons/iconfinder_Circled_Medium_svg5_5279113.png';
-
-// import SearchDevelopers from './Components/SearchDevelopers/SearchDevelopers';
 
 const FA = require('react-fontawesome');
 
@@ -46,7 +45,6 @@ class HomePage extends React.Component {
             }, 3000);
         } else {
             axios
-                // .post('http://localhost:4000/api/developers/', postData)
                 .post('https://developer-profiles.herokuapp.com/api/developers/', postData)
                 .then(() => {
                     window.location.reload(false);

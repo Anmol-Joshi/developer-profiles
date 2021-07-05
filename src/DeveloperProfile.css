@@ -11,14 +11,6 @@ a {
     text-decoration: none;
 }
 
-.dev-profile-sub-hr {
-    margin-left: 50px;
-    margin-right: 50px;
-    /* margin-top: 10px;
-    margin-bottom: 10px; */
-    /* background-color: #3f3d56; */
-}
-
 .dev-profile-nav {
     background-color: #2f2e41;
     font-size: 24px;
@@ -66,35 +58,6 @@ a {
     margin-bottom: 15px;
 }
 
-.dev-profile-social-links {
-    /* display: flex; */
-    /* align-items: center; */
-    margin-top: 20px;
-    margin-bottom: 20px;
-    /* justify-content: center; */
-}
-
-.dev-profile-social-element {
-    width: 30px;
-    height: 30px;
-    vertical-align: bottom;
-    margin-right: 15px;
-}
-
-.dev-profile-other-info {
-    display: flex;
-    /* align-items: center; */
-    margin-top: 15px;
-}
-
-.dev-profile-other-element {
-    font-size: 16px;
-    height: 16px;
-    width: 16px;
-    vertical-align: bottom;
-    margin-right: 7.5px;
-}
-
 .dev-profile-banner-image {
     height: 400px;
     width: 400px;
@@ -111,43 +74,6 @@ a {
 
 .dev-profile-repos-group {
     margin-top: 30px;
-}
-.dev-profile-repo-flex {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 60px;
-    align-items: center;
-    /* vertical-align: bottom; */
-}
-
-.dev-profile-repo-name {
-    font-size: 36px;
-    color: rgb(57, 125, 228);
-    /* display: inline; */
-}
-.dev-profile-repo-link {
-    display: flex;
-}
-
-.dev-profile-repo-last-updated {
-    font-size: 24px;
-    color: gray;
-    margin-left: 20px;
-    vertical-align: bottom;
-}
-
-.dev-profile-repo-url {
-    vertical-align: bottom;
-}
-
-.dev-profile-repo-description {
-    font-size: 32px;
-    margin-left: 60px;
-    /* margin-bottom: 30px; */
-}
-.dev-profile-repoo {
-    margin: 30px;
 }
 
 .dev-profile-footer-text {
@@ -199,11 +125,6 @@ a {
         height: 50%;
         margin: 10px;
     }
-    .dev-profile-social-links,
-    .dev-profile-other-info {
-        display: flex;
-        justify-content: space-around;
-    }
 
     .dev-profile-info {
         margin-top: 10px;
@@ -218,63 +139,8 @@ a {
         text-align: center;
         font-size: 16px;
     }
-    .dev-profile-other-element {
-        font-size: 12px;
-    }
 
-    .dev-profile-social-element {
-        height: 20px;
-        width: 20px;
-    }
     .dev-profile-repos-heading {
         font-size: 36px;
     }
-
-    .dev-profile-repo-flex {
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        margin-left: 15px;
-        align-items: center;
-        /* vertical-align: bottom; */
-    }
-
-    .dev-profile-repo-name {
-        font-size: 24px;
-        color: rgb(57, 125, 228);
-    }
-
-    .dev-profile-repo-last-updated {
-        font-size: 16px;
-        color: gray;
-        margin-left: 20px;
-        vertical-align: bottom;
-    }
-
-    .dev-profile-repo-url {
-        vertical-align: bottom;
-        height: 16px;
-        width: 16px;
-    }
-
-    .dev-profile-repo-description {
-        font-size: 18px;
-        margin-left: 20px;
-        margin-right: 20px;
-        /* margin-bottom: 30px; */
-    }
-    .dev-profile-sub-hr {
-        margin-left: 5px;
-        margin-right: 5px;
-        /* background-color: #3f3d56; */
-    }
-    .dev-profile-repoo {
-        margin: 5px;
-    }
-    /* .location-div,
-    .work-div,
-    .blog-div {
-        display: flex;
-        flex-direction: column;
-    } */
 }
