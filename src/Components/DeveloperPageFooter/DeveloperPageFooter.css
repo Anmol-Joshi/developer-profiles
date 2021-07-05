@@ -1,0 +1,13 @@
+.dev-page-footer-text {
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.dev-page-footer {
+    background-color: #2f2e41;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,10 +1,11 @@
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import './DeveloperProfile.css';
 import DevelopersSocialLinks from './Components/DevelopersSocialLinks/DevelopersSocialLinks';
 import DevelopersOtherInfo from './Components/DevelopersOtherInfo/DevelopersOtherInfo';
 import Repos from './Components/Repos/Repos';
-
-const FA = require('react-fontawesome');
+import DeveloperPageHeader from './Components/DeveloperPageHeader/DeveloperPageHeader';
+import DeveloperPageFooter from './Components/DeveloperPageFooter/DeveloperPageFooter';
 
 class DeveloperProfile extends React.Component {
     constructor(props) {
@@ -27,14 +28,7 @@ class DeveloperProfile extends React.Component {
                 {this.state.loaded && (
                     <div>
                         <body className="dev-profile-body">
-                            <header>
-                                <nav className="dev-profile-nav">
-                                    <div className="dev-profile-nav-content">The Developer Profile</div>
-                                    <a href="/" className="dev-profile-nav-link">
-                                        <div className="dev-profile-nav-content">All Developers</div>
-                                    </a>
-                                </nav>
-                            </header>
+                            <DeveloperPageHeader />
                             <main>
                                 <div>
                                     <div className="dev-profile-banner">
@@ -56,13 +50,7 @@ class DeveloperProfile extends React.Component {
                                     {this.state.loaded && <Repos developer={this.state.developer} />}
                                 </div>
                             </main>
-                            <footer className="dev-profile-footer">
-                                <div className="dev-profile-footer-text">
-                                    Made with
-                                    <FA className="fa-icon" name="fas fa-heart" />
-                                    by Anmol
-                                </div>
-                            </footer>
+                            <DeveloperPageFooter />
                             <script src="./js/user.js" />
                             <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" />
                         </body>

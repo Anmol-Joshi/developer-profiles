@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react';
 import './DevelopersSocialLinks.css';
 import githubIcon from '../../assets/Profile_Icons/iconfinder_github_317712.png';
@@ -10,6 +11,7 @@ import emailIcon from '../../assets/Profile_Icons/email-24px.svg';
 
 function DevelopersSocialLinks(props) {
     const { developer } = props;
+    console.log(developer);
     return (
         <div className="developers-social-social-links">
             <a href={`https://github.com/${developer.id}`} target="blank">

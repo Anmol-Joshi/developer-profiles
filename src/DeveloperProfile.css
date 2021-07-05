@@ -24,13 +24,6 @@ a {
   margin-right: 20px; */
 }
 
-.dev-profile-nav-content {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.dev-profile-nav-link {
-    text-decoration: underline;
-}
 .dev-profile-banner {
     background-color: #d5d5d5d7;
     display: flex;
@@ -92,23 +85,6 @@ a {
 }
 
 @media screen and (max-width: 800px) {
-    .dev-profile-nav {
-        background-color: #2f2e41;
-        font-size: 20px;
-        color: white;
-        height: 100px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        /* padding-left: 10px;
-    margin-right: 20px; */
-    }
-
-    .dev-profile-nav-content {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
     .dev-profile-banner {
         display: flex;
         /* justify-content: center; */
