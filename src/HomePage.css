@@ -4,32 +4,6 @@
 body {
     margin: 0;
 }
-.homepage-header {
-    width: 100%;
-    background-color: #2f2e41;
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    /* justify-content: center; */
-}
-
-.homepage-main-heading {
-    display: inline;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 72px;
-    color: #fff;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-.homepage-main-img {
-    /* height: 600px;
-  width: 500px; */
-    height: auto;
-    width: 40%;
-}
 
 .homepage-main {
     display: flex;
@@ -55,70 +29,6 @@ body {
     margin-right: 50px;
     background-color: #3f3d56;
 }
-
-/* .search-input-div {
-    background-color: #d0cde1;
-    display: flex;
-    width: 780px;
-    height: 80px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15px; */
-
-/* padding: 5px; */
-/* } */
-
-/* .search-input {
-    width: 700px;
-    height: 60px;
-    border-radius: 15px;
-    border-color: #fff;
-    border-width: 0;
-    margin: 10px;
-    font-size: 24px;
-    color: #3f3d56;
-    padding-left: 25px;
-    padding-right: 25px;
-    outline: none;
-} */
-
-/* .search-icon {
-    height: 50px;
-    width: 50px;
-    margin-left: 10px;
-    margin-right: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-} */
-
-/* .developer-info-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.developer-avatar {
-    height: 100px;
-    width: 100px;
-    border-radius: 50% 50% 50% 50%;
-    fill: #7c639f;
-}
-
-.developer-name {
-    font-size: 36px;
-    color: #9f8e63;
-    margin-left: 50px;
-    margin-right: 20px;
-}
-
-.developer-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 40%;
-    margin: 50px;
-} */
 
 .homepage-not-found-message {
     font-size: 36px;
@@ -271,22 +181,22 @@ body {
     border-radius: 15px;
 }
 @media screen and (max-width: 850px) {
-    .homepage-header {
+    /* .homepage-header {
         width: 100%;
         background-color: #2f2e41;
         height: auto;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        padding: 40px 0;
+        padding: 40px 0; */
 
-        /* justify-content: center; */
-        /* justify-content: center; */
-    }
+    /* justify-content: center; */
+    /* justify-content: center; */
+    /* } */
     /* .desktop-br{
       display: none;
     } */
-    .homepage-main-heading {
+    /* .homepage-main-heading {
         font-size: 36px;
         text-align: center;
     }
@@ -294,7 +204,7 @@ body {
     .homepage-main-img {
         height: 300px;
         width: 300px;
-    }
+    } */
     .homepage-sub-heading {
         font-size: 30px;
         text-align: center;
