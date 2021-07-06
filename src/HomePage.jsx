@@ -30,7 +30,7 @@ class HomePage extends React.Component {
                     <Developers />
                     {this.state.displayPopup && <HomePagePopup popupControl={this.popupControl.bind(this)} />}
                     <hr className="homepage-sub-hr" />
-                    <div className="homepage-not-found-message">Could not find what you were looking for?</div>
+                    <div className="homepage-not-found-message">Could not find what you were looking for? </div>
                     <input
                         onClick={() => this.popupControl(true)}
                         type="button"
