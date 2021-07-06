@@ -1,3 +1,4 @@
+/* eslint-disable react/sort-comp */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import axios from 'axios';
@@ -29,6 +30,14 @@ class HomePage extends React.Component {
         };
     }
 
+    popupClose() {
+        this.setState({ displayPopup: false });
+    }
+
+    popupOpen() {
+        this.setState({ displayPopup: true });
+    }
+
     handleSubmit = () => {
         const postData = {
             github_id: this.state.githubId,
@@ -48,7 +57,8 @@ class HomePage extends React.Component {
                 .post('https://developer-profiles.herokuapp.com/api/developers/', postData)
                 .then(() => {
                     window.location.reload();
-                    this.setState({ displayPopup: false });
+                    // this.setState({ displayPopup: false });
+                    this.popupClose();
                 })
                 .catch(() => {
                     this.setState({ popupInvalidGithubIdError: true });
@@ -205,7 +215,7 @@ class HomePage extends React.Component {
                                     <span className="homepage-popup-error">*Github id incorrect</span>
                                 )}
                                 <input
-                                    onClick={() => this.setState({ displayPopup: false })}
+                                    onClick={() => this.setState(this.popupClose())} // { displayPopup: false })}
                                     type="button"
                                     className="homepage-popup-cancel-btn"
                                     id="popup-close"
@@ -223,7 +233,7 @@ class HomePage extends React.Component {
                     <hr className="homepage-sub-hr" />
                     <div className="homepage-not-found-message">Could not find what you were looking for?</div>
                     <input
-                        onClick={() => this.setState({ displayPopup: true })}
+                        onClick={() => this.setState(this.popupOpen())} // { displayPopup: true })}
                         type="button"
                         id="popup-open"
                         className="homepage-add-dev-info-btn"
