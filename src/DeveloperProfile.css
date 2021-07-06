@@ -28,7 +28,7 @@ a {
     background-color: #d5d5d5d7;
     display: flex;
     /* align-items: center; */
-    /* justify-content: center; */
+    justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 50px;
@@ -52,10 +52,10 @@ a {
 }
 
 .dev-profile-banner-image {
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     border-radius: 400px;
-    margin: 25px;
+    margin: 35px;
 }
 
 .dev-profile-repos-heading {

@@ -40,87 +40,14 @@ a {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.developers-developer-info-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    /* align-items: center; */
-    width: 100%;
-}
 
-.developers-developer-avatar {
-    height: 100px;
-    width: 100px;
-    border-radius: 50% 50% 50% 50%;
-    fill: #7c639f;
-}
-
-.developers-name {
-    font-size: 36px;
-    color: #9f8e63;
-    margin-left: 50px;
-    margin-right: 20px;
-}
-
-.developers-developer-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* justify-content: right; */
-    width: 40%;
-    margin: 50px;
-    /* padding-left: 200px; */
-    /* padding-right: auto; */
-    /* margin-right: 0; */
-}
-.developers-link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 @media screen and (max-width: 850px) {
-    .developers-developer-info-group {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: max-content;
-        justify-items: center;
-        width: 100%;
-        /* height: 40px; */
-        /* margin: 10px; */
-    }
-    .developers-developer-avatar {
-        height: 40px;
-        width: 40px;
-        border-radius: 50% 50% 50% 50%;
-        color: white;
-        fill: #7c639f;
-    }
-
-    .developers-name {
-        font-size: 20px;
-        color: #9f8e63;
-        margin-left: 5px;
-        margin-right: 2px;
-    }
     .developers-sub-hr {
         margin-left: 10px;
         margin-right: 10px;
         color: #3f3d56;
     }
 
-    .developers-developer-info {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-        margin: 18px;
-    }
-
-    .developers-developer-link {
-        height: 12px;
-        width: 12px;
-    }
     .developers-search-input-div {
         background-color: #d0cde1;
         display: flex;
