@@ -1,16 +1,18 @@
+/* eslint-disable react/jsx-no-bind */
 /* eslint-disable react/sort-comp */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import './HomePage.css';
 import Developers from './Components/Developers/Developers';
-import githubIcon from './assets/Profile_Icons/iconfinder_github_317712.png';
-import linkedinIcon from './assets/Profile_Icons/iconfinder_2018_social_media_popular_app_logo_linkedin_3225190.png';
-import codechefIcon from './assets/Profile_Icons/codechef-1324440139527402917_32.png';
-import hackerrankIcon from './assets/Profile_Icons/iconfinder_160_Hackerrank_logo_logos_4373234.png';
-import twitterIcon from './assets/Profile_Icons/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png';
-import mediumIcon from './assets/Profile_Icons/iconfinder_Circled_Medium_svg5_5279113.png';
+// import githubIcon from './assets/Profile_Icons/iconfinder_github_317712.png';
+// import linkedinIcon from './assets/Profile_Icons/iconfinder_2018_social_media_popular_app_logo_linkedin_3225190.png';
+// import codechefIcon from './assets/Profile_Icons/codechef-1324440139527402917_32.png';
+// import hackerrankIcon from './assets/Profile_Icons/iconfinder_160_Hackerrank_logo_logos_4373234.png';
+// import twitterIcon from './assets/Profile_Icons/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png';
+// import mediumIcon from './assets/Profile_Icons/iconfinder_Circled_Medium_svg5_5279113.png';
 import HomePageHeader from './Components/HomePageHeader/HomePageHeader';
+import HomePagePopup from './Components/HomePagePopup/HomePagePopup';
 
 const FA = require('react-fontawesome');
 
@@ -19,55 +21,60 @@ class HomePage extends React.Component {
         super(props);
         this.state = {
             displayPopup: false,
-            popupError: false,
-            popupInvalidGithubIdError: false,
-            githubId: '',
-            linkedinId: '',
-            codechefId: '',
-            hackerrankId: '',
-            twitterId: '',
-            mediumId: '',
+            // popupError: false,
+            // popupInvalidGithubIdError: false,
+            // githubId: '',
+            // linkedinId: '',
+            // codechefId: '',
+            // hackerrankId: '',
+            // twitterId: '',
+            // mediumId: '',
         };
     }
 
-    popupClose() {
-        this.setState({ displayPopup: false });
+    popupControl(v) {
+        this.setState({ displayPopup: v });
     }
 
-    popupOpen() {
-        this.setState({ displayPopup: true });
-    }
+    // popupOpen() {
+    //     this.setState({ displayPopup: true });
+    // }
 
-    handleSubmit = () => {
-        const postData = {
-            github_id: this.state.githubId,
-            linkedin_id: this.state.linkedinId,
-            codechef_id: this.state.codechefId,
-            hackerrank_id: this.state.hackerrankId,
-            twitter_id: this.state.twitterId,
-            medium_id: this.state.mediumId,
-        };
-        if (this.state.githubId === '') {
-            this.setState({ popupError: true });
-            setTimeout(() => {
-                this.setState({ popupError: false });
-            }, 3000);
-        } else {
-            axios
-                .post('https://developer-profiles.herokuapp.com/api/developers/', postData)
-                .then(() => {
-                    window.location.reload();
-                    // this.setState({ displayPopup: false });
-                    this.popupClose();
-                })
-                .catch(() => {
-                    this.setState({ popupInvalidGithubIdError: true });
-                    setTimeout(() => {
-                        this.setState({ popupInvalidGithubIdError: false });
-                    }, 3000);
-                });
-        }
-    };
+    // popupClose() {
+    //     this.setState({ displayPopup: true });
+    // }
+
+    // handleSubmit = () => {
+    //     const postData = {
+    //         github_id: this.state.githubId,
+    //         linkedin_id: this.state.linkedinId,
+    //         codechef_id: this.state.codechefId,
+    //         hackerrank_id: this.state.hackerrankId,
+    //         twitter_id: this.state.twitterId,
+    //         medium_id: this.state.mediumId,
+    //     };
+    //     if (this.state.githubId === '') {
+    //         setTimeout(() => {
+    //             this.setState({ popupError: false });
+    //         }, 3000);
+    //     } else {
+    //         axios
+    //             .post('https://developer-profiles.herokuapp.com/api/developers/', postData)
+    //             .then(() => {
+    //                 // window.location.reload();
+    //                 // this.setState({ displayPopup: false });
+    //                 this.popupControl(false);
+    //                 window.location.reload();
+    //                 // this.popupClose();
+    //             })
+    //             .catch(() => {
+    //                 this.setState({ popupInvalidGithubIdError: true });
+    //                 setTimeout(() => {
+    //                     this.setState({ popupInvalidGithubIdError: false });
+    //                 }, 3000);
+    //             });
+    //     }
+    // };
 
     render() {
         return (
@@ -77,8 +84,8 @@ class HomePage extends React.Component {
                     <div className="homepage-sub-heading">Explore developer profiles</div>
                     <hr className="homepage-sub-hr" />
                     <Developers />
-                    {this.state.displayPopup && (
-                        <div className="homepage-popup-container">
+                    {this.state.displayPopup && <HomePagePopup popupControl={this.popupControl.bind(this)} />}
+                    {/* <div className="homepage-popup-container">
                             <div className="homepage-popup-container-header">
                                 <div className="homepage-form-header">Add developer profile</div>
                             </div>
@@ -215,7 +222,8 @@ class HomePage extends React.Component {
                                     <span className="homepage-popup-error">*Github id incorrect</span>
                                 )}
                                 <input
-                                    onClick={() => this.setState(this.popupClose())} // { displayPopup: false })}
+                                    // onClick={() => this.setState({ displayPopup: false })}
+                                    onClick={() => this.popupControl(false)}
                                     type="button"
                                     className="homepage-popup-cancel-btn"
                                     id="popup-close"
@@ -228,12 +236,13 @@ class HomePage extends React.Component {
                                     value="Submit"
                                 />
                             </div>
-                        </div>
-                    )}
+                        </div> */}
+                    {/* )} */}
                     <hr className="homepage-sub-hr" />
                     <div className="homepage-not-found-message">Could not find what you were looking for?</div>
                     <input
-                        onClick={() => this.setState(this.popupOpen())} // { displayPopup: true })}
+                        // onClick={() => this.setState({ displayPopup: true })}
+                        onClick={() => this.popupControl(true)}
                         type="button"
                         id="popup-open"
                         className="homepage-add-dev-info-btn"

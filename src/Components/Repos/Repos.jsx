@@ -7,9 +7,9 @@ function Repos(props) {
     return (
         <div>
             {developer.repos.map((repo) => (
-                <div>
+                <div key={repo.name}>
                     <hr className="repos-sub-hr" />
-                    <div className="repos-repoo" key={repo.name}>
+                    <div className="repos-repoo">
                         <div className="repos-repo-flex">
                             <a href={`${repo.html_url}/${repo.name}`} target="_blank" rel="noopener noreferrer">
                                 <div className="repos-repo-link">

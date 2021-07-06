@@ -27,7 +27,7 @@ class DeveloperProfile extends React.Component {
             <div>
                 {this.state.loaded && (
                     <div>
-                        <body className="dev-profile-body">
+                        <div className="dev-profile-body">
                             <DeveloperPageHeader />
                             <main>
                                 <div>
@@ -53,7 +53,7 @@ class DeveloperProfile extends React.Component {
                             <DeveloperPageFooter />
                             <script src="./js/user.js" />
                             <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" />
-                        </body>
+                        </div>
                     </div>
                 )}
             </div>
