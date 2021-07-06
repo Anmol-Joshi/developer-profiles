@@ -1,9 +1,6 @@
 .repos-sub-hr {
     margin-left: 50px;
     margin-right: 50px;
-    /* background-color: red;
-    height: 1px;
-    border: 0; */
 }
 .repos-repoo {
     margin: 30px;
@@ -55,9 +52,10 @@
     .repos-repo-flex {
         display: flex;
         flex-direction: column;
-        margin-top: 10px;
-        margin-bottom: 15px;
+        margin-top: 5px;
+        margin-bottom: 10px;
         margin-left: 15px;
+        margin-right: 15px;
         align-items: center;
     }
     .repos-repo-name {
