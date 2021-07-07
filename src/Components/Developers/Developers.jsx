@@ -47,7 +47,7 @@ class Developers extends React.Component {
                         placeholder="Search for username"
                     />
                     <svg
-                        onClick={this.searchDeveloper}
+                        // onClick={this.searchDeveloper}
                         className="developers-search-icon"
                         xmlns="http://www.w3.org/2000/svg"
                         height="24"

@@ -8,7 +8,7 @@ function DisplayDevelopers(props) {
     return (
         <div className="display-developers-developer-info-group">
             {developers.map((dev) => (
-                <div className="display-developers-developer-info">
+                <div className="display-developers-developer-info" key={dev.id}>
                     <Link to={`/developers/${dev.id}`}>
                         <img className="display-developers-developer-avatar" src={dev.avatar_url} alt="" />
                     </Link>
