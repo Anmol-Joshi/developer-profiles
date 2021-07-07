@@ -5,8 +5,9 @@ import './HomePage.css';
 import Developers from './Components/Developers/Developers';
 import HomePageHeader from './Components/HomePageHeader/HomePageHeader';
 import HomePagePopup from './Components/HomePagePopup/HomePagePopup';
+import HomePageFooter from './Components/HomePageFooter/HomePageFooter';
 
-const FA = require('react-fontawesome');
+// const FA = require('react-fontawesome');
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -39,13 +40,7 @@ class HomePage extends React.Component {
                         value="Add developer info"
                     />
                 </main>
-                <footer className="homepage-footer">
-                    <div className="homepage-footer-text">
-                        Made with
-                        <FA className="fa-icon" name="fas fa-heart" />
-                        by Anmol
-                    </div>
-                </footer>
+                <HomePageFooter />
             </div>
         );
     }
