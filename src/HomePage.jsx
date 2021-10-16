@@ -19,6 +19,11 @@ class HomePage extends React.Component {
 
     popupControl(v) {
         this.setState({ displayPopup: v });
+        if (v === true) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
     }
 
     render() {

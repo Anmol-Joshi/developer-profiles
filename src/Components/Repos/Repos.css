@@ -25,8 +25,9 @@
     width: 20px;
 }
 .repos-repo-last-updated {
-    font-size: 24px;
-    color: gray;
+    font-size: 20px;
+    /* color: gray; */
+    color: #9f8e63;
     margin-left: 20px;
     vertical-align: bottom;
 }
@@ -68,8 +69,9 @@
         width: 14px;
     }
     .repos-repo-last-updated {
-        font-size: 16px;
-        color: gray;
+        font-size: 14px;
+        /* color: gray; */
+        color: #9f8e63;
         margin-left: 20px;
         vertical-align: bottom;
     }

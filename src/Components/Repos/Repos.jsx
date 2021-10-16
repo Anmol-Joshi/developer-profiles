@@ -19,7 +19,7 @@ function Repos(props) {
                                     </div>
                                 </div>
                             </a>
-                            <div className="repos-repo-last-updated">Updated on {repo.updated_at.split('T')[0]}</div>
+                            <div className="repos-repo-last-updated">updated on {repo.updated_at.split('T')[0]}</div>
                         </div>
                         <div className="repos-repo-description">{repo.description || ''}</div>
                     </div>
