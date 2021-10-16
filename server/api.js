@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 const axios = require('axios');
 const express = require('express');
 
@@ -12,6 +13,7 @@ router.get('/developers', (req, res) => {
     // console.log('keys are', keys);
     const values = Object.values(developerData);
     // console.log('values are', values);
+    // eslint-disable-next-line no-restricted-syntax
     for (const key of keys) {
         result.push({ id: developerData[key].id, avatar_url: developerData[key].avatar_url });
     }
@@ -84,7 +86,7 @@ router.post('/developers', (req, res) => {
 });
 
 router.get('/developers/:id', (req, res) => {
-    console.log(developerData[req.params.id]);
+    // console.log(developerData[req.params.id]);
     if (developerData[req.params.id]) {
         res.status(200).send(developerData[req.params.id]);
     } else {
