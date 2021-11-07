@@ -5,7 +5,7 @@
 ## Get all developers:-
 
 ```js
-GET /api/developers
+GET /api/developers/
 Sample Response Body:
 [{
 	"id": "gcnit",
