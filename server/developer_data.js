@@ -307,5 +307,67 @@ const developerData = {
             },
         ],
     },
+    sagar0907: {
+        id: 'sagar0907',
+        linkedin_id: 'sagarjain0907',
+        codechef_id: '',
+        hackerrank_id: '',
+        twitter_id: '',
+        medium_id: '',
+        avatar_url: 'https://avatars.githubusercontent.com/u/8445055?v=4',
+        name: 'Sagar Jain',
+        company: '@workattech',
+        blog: 'https://workat.tech',
+        location: 'Bangalore',
+        email: null,
+        bio: 'Building workat.tech; Previously Software Engineer at @uber and @media-net',
+        github_id: 'sagar0907',
+        repos: [
+            {
+                name: 'bringe',
+                html_url: 'https://github.com/sagar0907',
+                description: 'Chrome Extension for virtually everything related to movies and tv series',
+                updated_at: '2019-08-16T11:46:56Z',
+            },
+            {
+                name: 'copycat',
+                html_url: 'https://github.com/sagar0907',
+                description:
+                    'Chrome extension which stores and helps you manage everything you copy on web pages, so that you can access them later.',
+                updated_at: '2018-09-27T18:53:53Z',
+            },
+            {
+                name: 'firepad',
+                html_url: 'https://github.com/sagar0907',
+                description: 'Collaborative text editing powered by Firebase',
+                updated_at: '2021-10-14T10:52:38Z',
+            },
+            {
+                name: 'quickNotes',
+                html_url: 'https://github.com/sagar0907',
+                description: 'Chrome extension to make and access notes quickly, at the launch of a new tab.',
+                updated_at: '2021-01-03T20:52:52Z',
+            },
+            {
+                name: 'RECursionWebsite',
+                html_url: 'https://github.com/sagar0907',
+                description: null,
+                updated_at: '2016-07-27T18:10:39Z',
+            },
+            {
+                name: 'sagar0907.github.io',
+                html_url: 'https://github.com/sagar0907',
+                description: null,
+                updated_at: '2020-06-24T19:23:24Z',
+            },
+            {
+                name: 'webscout',
+                html_url: 'https://github.com/sagar0907',
+                description:
+                    'Search everything, everywhere. A chrome extension which takes over your new tab so that searching your favourite websites become a lot easier.',
+                updated_at: '2018-08-27T15:17:40Z',
+            },
+        ],
+    },
 };
 module.exports = developerData;
