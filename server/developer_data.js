@@ -199,107 +199,113 @@ const developerData = {
             },
         ],
     },
-    anmol-joshi:{
-        "id": "anmol-joshi",
-        "linkedin_id": "anmol-joshi",
-        "codechef_id": "",
-        "hackerrank_id": "",
-        "twitter_id": "",
-        "medium_id": "",
-        "avatar_url": "https://avatars.githubusercontent.com/u/46377877?v=4",
-        "name": "Anmol Joshi",
-        "company": null,
-        "blog": "https://www.linkedin.com/in/anmol-joshi/",
-        "location": null,
-        "email": null,
-        "bio": null,
-        "github_id": "Anmol-Joshi",
-        "repos": [
+    'anmol-joshi': {
+        id: 'anmol-joshi',
+        linkedin_id: 'anmol-joshi',
+        codechef_id: '',
+        hackerrank_id: '',
+        twitter_id: '',
+        medium_id: '',
+        avatar_url: 'https://avatars.githubusercontent.com/u/46377877?v=4',
+        name: 'Anmol Joshi',
+        company: null,
+        blog: 'https://www.linkedin.com/in/anmol-joshi/',
+        location: null,
+        email: null,
+        bio: null,
+        github_id: 'Anmol-Joshi',
+        repos: [
             {
-                "name": "Anmol-Joshi",
-                "html_url": "https://github.com/Anmol-Joshi",
-                "description": null,
-                "updated_at": "2021-11-07T05:24:14Z"
+                name: 'Anmol-Joshi',
+                html_url: 'https://github.com/Anmol-Joshi',
+                description: null,
+                updated_at: '2021-11-07T05:24:14Z',
             },
             {
-                "name": "book-review-app",
-                "html_url": "https://github.com/Anmol-Joshi",
-                "description": "MERN e-commerce and rating and review web-app",
-                "updated_at": "2021-11-02T16:26:35Z"
+                name: 'book-review-app',
+                html_url: 'https://github.com/Anmol-Joshi',
+                description: 'MERN e-commerce and rating and review web-app',
+                updated_at: '2021-11-02T16:26:35Z',
             },
             {
-                "name": "developer-profiles",
-                "html_url": "https://github.com/Anmol-Joshi",
-                "description": "ERN(Express.js React.js Node.js) application in which developers can add their own profile and view other developer's profiles.",
-                "updated_at": "2021-11-01T17:05:21Z"
+                name: 'developer-profiles',
+                html_url: 'https://github.com/Anmol-Joshi',
+                description:
+                    "ERN(Express.js React.js Node.js) application in which developers can add their own profile and view other developer's profiles.",
+                updated_at: '2021-11-01T17:05:21Z',
             },
             {
-                "name": "ethereumbook",
-                "html_url": "https://github.com/Anmol-Joshi",
-                "description": "Mastering Ethereum, by Andreas M. Antonopoulos, Gavin Wood",
-                "updated_at": "2021-09-03T17:18:55Z"
+                name: 'ethereumbook',
+                html_url: 'https://github.com/Anmol-Joshi',
+                description: 'Mastering Ethereum, by Andreas M. Antonopoulos, Gavin Wood',
+                updated_at: '2021-09-03T17:18:55Z',
             },
             {
-                "name": "JavaScript-Templates",
-                "html_url": "https://github.com/Anmol-Joshi",
-                "description": "1KB lightweight, fast & powerful JavaScript templating engine with zero dependencies. Compatible with server-side environments like node.js, module loaders like RequireJS and all web browsers.",
-                "updated_at": "2021-07-07T05:16:15Z"
+                name: 'JavaScript-Templates',
+                html_url: 'https://github.com/Anmol-Joshi',
+                description:
+                    '1KB lightweight, fast & powerful JavaScript templating engine with zero dependencies. Compatible with server-side environments like node.js, module loaders like RequireJS and all web browsers.',
+                updated_at: '2021-07-07T05:16:15Z',
             },
             {
-                "name": "machineCoding",
-                "html_url": "https://github.com/Anmol-Joshi",
-                "description": "This repo is created to help people with the machine coding interview. There is no free website to provide complete guide for machine coding round so I have created this repo where I have shared all my machine coding practices and created a medium post as well to help with theory part.",
-                "updated_at": "2021-09-05T07:52:23Z"
+                name: 'machineCoding',
+                html_url: 'https://github.com/Anmol-Joshi',
+                description:
+                    'This repo is created to help people with the machine coding interview. There is no free website to provide complete guide for machine coding round so I have created this repo where I have shared all my machine coding practices and created a medium post as well to help with theory part.',
+                updated_at: '2021-09-05T07:52:23Z',
             },
             {
-                "name": "MachineCodingSolution-1",
-                "html_url": "https://github.com/Anmol-Joshi",
-                "description": "My solutions to TicTacToe and SnakeAndLadder machine coding problems on https://workat.tech/practice",
-                "updated_at": "2021-09-12T15:33:11Z"
+                name: 'MachineCodingSolution-1',
+                html_url: 'https://github.com/Anmol-Joshi',
+                description:
+                    'My solutions to TicTacToe and SnakeAndLadder machine coding problems on https://workat.tech/practice',
+                updated_at: '2021-09-12T15:33:11Z',
             },
             {
-                "name": "MachineCodingSolution-2",
-                "html_url": "https://github.com/Anmol-Joshi",
-                "description": null,
-                "updated_at": "2021-09-05T05:38:24Z"
+                name: 'MachineCodingSolution-2',
+                html_url: 'https://github.com/Anmol-Joshi',
+                description: null,
+                updated_at: '2021-09-05T05:38:24Z',
             },
             {
-                "name": "portfolio-site",
-                "html_url": "https://github.com/Anmol-Joshi",
-                "description": null,
-                "updated_at": "2021-06-24T11:09:17Z"
+                name: 'portfolio-site',
+                html_url: 'https://github.com/Anmol-Joshi',
+                description: null,
+                updated_at: '2021-06-24T11:09:17Z',
             },
             {
-                "name": "Quiz-Application",
-                "html_url": "https://github.com/Anmol-Joshi",
-                "description": null,
-                "updated_at": "2021-04-26T02:52:27Z"
+                name: 'Quiz-Application',
+                html_url: 'https://github.com/Anmol-Joshi',
+                description: null,
+                updated_at: '2021-04-26T02:52:27Z',
             },
             {
-                "name": "random_csv_generator",
-                "html_url": "https://github.com/Anmol-Joshi",
-                "description": "Tool for rendering plausible real-life csv data.",
-                "updated_at": "2021-02-18T08:35:17Z"
+                name: 'random_csv_generator',
+                html_url: 'https://github.com/Anmol-Joshi',
+                description: 'Tool for rendering plausible real-life csv data.',
+                updated_at: '2021-02-18T08:35:17Z',
             },
             {
-                "name": "url-shortener",
-                "html_url": "https://github.com/Anmol-Joshi",
-                "description": "Express,Node and Vanilla JS app build to shorten the url and view recently shortened urls.",
-                "updated_at": "2021-11-01T17:06:34Z"
+                name: 'url-shortener',
+                html_url: 'https://github.com/Anmol-Joshi',
+                description:
+                    'Express,Node and Vanilla JS app build to shorten the url and view recently shortened urls.',
+                updated_at: '2021-11-01T17:06:34Z',
             },
             {
-                "name": "Utility-Application",
-                "html_url": "https://github.com/Anmol-Joshi",
-                "description": null,
-                "updated_at": "2021-11-07T13:55:51Z"
+                name: 'Utility-Application',
+                html_url: 'https://github.com/Anmol-Joshi',
+                description: null,
+                updated_at: '2021-11-07T13:55:51Z',
             },
             {
-                "name": "utility-applications",
-                "html_url": "https://github.com/Anmol-Joshi",
-                "description": "Utility applications such as converters(number-base, length, temperature), encoder-decoder, ip-address finder , RGB - hex converter, time utility(timestamp converter, timer, stopwatch).",
-                "updated_at": "2021-11-01T17:04:10Z"
-            }
-        ]
-    }
+                name: 'utility-applications',
+                html_url: 'https://github.com/Anmol-Joshi',
+                description:
+                    'Utility applications such as converters(number-base, length, temperature), encoder-decoder, ip-address finder , RGB - hex converter, time utility(timestamp converter, timer, stopwatch).',
+                updated_at: '2021-11-01T17:04:10Z',
+            },
+        ],
+    },
 };
 module.exports = developerData;
