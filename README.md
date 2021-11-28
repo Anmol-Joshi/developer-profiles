@@ -1,8 +1,12 @@
-# Demo:- <a target="_blank" href='http://developer-profiles.herokuapp.com/'>developer-profiles.herokuapp.com</a>
+#Developer Profiles:-
 
-# API Specs:-
+## Application link:- <a target="_blank" href='http://developer-profiles.herokuapp.com/'>developer-profiles.herokuapp.com</a>
 
-## Get all developers:-
+## Application video:- https://youtu.be/B4mN_n3uq4U
+
+## API Specs:-
+
+### Get all developers:-
 
 ```js
 GET /api/developers/
@@ -17,7 +21,7 @@ Sample Response Body:
 Status: 200
 ```
 
-## Add a developer:-
+### Add a developer:-
 
 ```js
 POST /api/developers
@@ -38,7 +42,7 @@ Sample Response Body:
 Status: 201 (User Created), 400 (GitHub username is invalid)
 ```
 
-## Get a developer:-
+### Get a developer:-
 
 ```js
 GET /api/developers/:id
@@ -68,7 +72,7 @@ Sample Response Body:
 Status: 200 (Valid User), 404 (User does not exist)
 ```
 
-## Remove a developer:-
+### Remove a developer:-
 
 ```js
 DELETE /api/developers/:id
