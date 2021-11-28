@@ -1,8 +1,23 @@
-#Developer Profiles:-
+# Developer Profiles:-
 
 ## Application link:- <a target="_blank" href='http://developer-profiles.herokuapp.com/'>developer-profiles.herokuapp.com</a>
 
 ## Application video:- https://youtu.be/B4mN_n3uq4U
+
+## This web-app has the following features:-
+
+<ol>
+	<li>Developer List Page:- 
+		<ul><li> Provides brief details about the developers.</li>
+		<li> Search developers.</li>
+		<li> Add new devlopers.</li>
+		</ul>
+</li>
+
+<li>Developer Detail Page:- Shows detail developer info with their social profile links and list of their repos.
+
+</li>
+</ol>
 
 ## API Specs:-
 
