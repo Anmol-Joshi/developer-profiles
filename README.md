@@ -39,7 +39,7 @@ Status: 200
 ### Add a developer:-
 
 ```js
-POST /api/developers
+POST /api/developers/
 Sample Request Body:
 {
 	"github_id": "gcnit",
@@ -60,7 +60,7 @@ Status: 201 (User Created), 400 (GitHub username is invalid)
 ### Get a developer:-
 
 ```js
-GET /api/developers/:id
+GET /api/developers/:id/
 Sample Response Body:
 {
 	"id": "gcnit",
@@ -90,7 +90,7 @@ Status: 200 (Valid User), 404 (User does not exist)
 ### Remove a developer:-
 
 ```js
-DELETE /api/developers/:id
+DELETE /api/developers/:id/
 
 Status: 204 (Deleted)
 ```
